@@ -11,7 +11,7 @@
 }
 
 .game {
-  max-width: 400px;
+  max-width: 450px;
   padding: 15px 15px 10px 15px;
   margin: 0 auto;
   border-radius: 0.5rem;
@@ -100,7 +100,7 @@
   right: 0;
 
   height: 100%;
-  max-height: 10px;
+  max-height: 0px;
 
   transition: all 0.25s;
   background-color: black;
@@ -112,13 +112,4 @@
 
 .color-list > li:hover {
   background-color: #ddd;
-}
-
-/* ************ */
-/*    FOOTER    */
-/* ************ */
-footer {
-  margin-top: 1rem;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 14px;
 }

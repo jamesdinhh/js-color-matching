@@ -19,7 +19,7 @@ function handleChange(second) {
 function handleFinish() {
   console.log('finish');
   gameState = GAME_STATUS.FINISHED
-  setTimerText('YOU LOSE 😭');
+  setTimerText('YOU LOSE 😏');
   showPlayAgainButton()
 }
 
@@ -46,7 +46,7 @@ function handleColorClick(liElement) {
       //show replay
       showPlayAgainButton()
       // show you win
-      setTimerText('YOU WIN ❤️‍🔥');
+      setTimerText('YOU WIN 🤌');
       timer.clear()
       gameState = GAME_STATUS.FINISHED;
      }
@@ -125,6 +125,6 @@ function startTimer() {
 (() => {
   initColors();
   attachEventForColorList();
-  attachEventForPlayAgainButton()
-  startTimer()
+  attachEventForPlayAgainButton();
+  startTimer();
 }) ()

@@ -45,17 +45,17 @@ export function setTimerText(text) {
     if (timerElement) timerElement.textContent = text;
 }
 
-export function createTimer(seconds, onChange, onFinish) {
+export function createTimer({seconds, onChange, onFinish}) {
     let intervalId = null
 
     function start() {
         clear()
-        let currentSecond = seconds
+        let currentSecond = seconds;
         intervalId = setInterval(() =>{
             // if(onChange) onChange(currentSecond)
             onChange?.(currentSecond)
             currentSecond--;
-            if(currentSecond = 0) {
+            if(currentSecond < 0) {
                 clear();
                 onFinish?.()
             }
